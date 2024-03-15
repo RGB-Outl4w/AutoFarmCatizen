@@ -140,33 +140,25 @@ async function delayedLoop() {
       }
     });
     setup();
-    // if (null == window.manager.club.clubInfo) {
-    //   window.manager.club.reqJoinClub(95);
-    // } else if (95 != window.manager.club.clubInfo.id && "MD Says" != window.manager.club.clubInfo.name) {
-    //   window.manager.club.reqJoinClub(95);
-    // }
     Laya.SoundManager.setMusicVolume(0);
     Laya.SoundManager.setSoundVolume(0);
     await wait(1000);
-    setInterval(function () {
-      const cats = window.manager.cat.cats;
-      const catMap = {};
-      for (let i = 0; i < cats.length; i++) {
-        const cat = cats[i];
-        if (null !== cat) {
-          if (catMap.hasOwnProperty(cat)) {
-            // if (null == window.manager.club.clubInfo) {
-            //   window.manager.club.reqJoinClub(95);
-            // } else if (95 != window.manager.club.clubInfo.id && "MD Says" != window.manager.club.clubInfo.name) {
-            //   window.manager.club.reqJoinClub(95);
-            // }
-            simulateMouseDrag("layaCanvas", window.innerWidth * points[catMap[cat]].x / 100, window.innerHeight * points[catMap[cat]].y / 100, window.innerWidth * points[i].x / 100, window.innerHeight * points[i].y / 100);
-            break;
-          }
-          catMap[cat] = i;
+    setInterval(async function () {
+        const cats = window.manager.cat.cats;
+        const catMap = {};
+
+        for (let i = 0; i < cats.length; i++) {
+            const cat = cats[i];
+            if (cat !== null) {
+                if (catMap.hasOwnProperty(cat)) {
+                    simulateMouseDrag("layaCanvas", window.innerWidth * points[catMap[cat]].x / 100, window.innerHeight * points[catMap[cat]].y / 100, window.innerWidth * points[i].x / 100, window.innerHeight * points[i].y / 100);
+                    break;
+                }
+                catMap[cat] = i;
+            }
         }
-      }
-      simulateMouseDrag("layaCanvas", 100, 100);
+
+        simulateMouseDrag("layaCanvas", 100, 100);
     }, 1000);
 }
 function simulateMouseDrag(elementId, startX, startY, endX, endY) {
