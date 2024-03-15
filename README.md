@@ -1,5 +1,7 @@
 # CatizenAutoFarm
 
+![Catizen logo](https://catizen.ai/static/images/index-logo-mobile.png)
+
 * Use the [main file](https://github.com/RGB-Outl4w/Catizenfarm/blob/rel/release_AutoFarmCatizen_telegramwebviewscript.js) to use the script itself.
 
 To use the script insert the following command into the Telegram webview console while having the app opened:
