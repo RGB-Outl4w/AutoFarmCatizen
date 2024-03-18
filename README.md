@@ -1,4 +1,4 @@
-# CatizenAutoFarm
+# AutoFarmCatizen
 
 ![Catizen logo](https://catizen.ai/static/images/index-logo-mobile.png)
 
