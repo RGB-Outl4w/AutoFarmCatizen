@@ -4,7 +4,11 @@
 
 * Use the [main file](https://github.com/RGB-Outl4w/Catizenfarm/blob/rel/release_AutoFarmCatizen_telegramwebviewscript.js) to use the script itself.
 
-To use the script insert the following command into the Telegram webview console `(Ctrl + Shift + i)` while having the web app opened:
+## Installation (Execution)
+Access the **Telegram** webview inspection console ([guide on how to do it](https://telegra.ph/How-to-open-webview-inspecting-window-console-03-23))
+
+Paste the following command into the command prompt:
+
 ```fetch('https://raw.githubusercontent.com/RGB-Outl4w/AutoFarmCatizen/rel/release_AutoFarmCatizen_telegramwebviewscript.js').then(response => response.text()).then(script => eval(script));```
 
 ## What this script does:
