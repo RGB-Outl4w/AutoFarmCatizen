@@ -2,7 +2,7 @@
 
 ![Catizen logo](https://catizen.ai/static/images/index-logo-mobile.png)
 
-### Friendly Reminder
+### 💖 Friendly Reminder
 You can support me on [boosty](https://boosty.to/rgboutlaw) if you wish <3
 ...and get rewarded for doing so.
 
