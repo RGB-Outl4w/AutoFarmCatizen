@@ -2,6 +2,8 @@
 
 ![Catizen logo](https://catizen.ai/static/images/index-logo-mobile.png)
 
+### Friendly Reminder
+You can support me on [boosty](https://boosty.to/rgboutlaw) if you wish <3
 
 ## Installation (Execution)
 Access the **Telegram** webview inspection console ([guide on how to do it](https://telegra.ph/How-to-open-webview-inspecting-window-console-03-23))
